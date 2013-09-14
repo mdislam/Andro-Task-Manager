@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CBA"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/AlarmMessage"
+        android:textColor="#000000"
+		android:typeface="serif"
+        android:layout_width="wrap_content"
+        android:textIsSelectable="False"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/stopAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OK" />
+
+</LinearLayout>

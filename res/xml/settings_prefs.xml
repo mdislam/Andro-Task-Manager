@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <ListPreference 
+        android:title="Reminder"
+        android:key="reminder"
+        android:summary="Reminder before"
+        android:entries="@array/reminder"
+        android:entryValues="@array/reminder"/>
+    	
+    <ListPreference 
+        android:title="Frequency"
+        android:key="frequency"
+        android:summary="Reminder Frequency"
+        android:entries="@array/frequency"
+        android:entryValues="@array/frequency"/>
+    
+    <ListPreference
+        android:title="Type"
+        android:key="type"
+        android:summary="Type of Reminder"
+        android:entries="@array/type"
+        android:entryValues="@array/type"/>
+    
+    <ListPreference 
+        android:title="Repetition"
+        android:key="repetition"
+        android:summary="One time/Repetition"
+        android:entries="@array/repetition"
+        android:entryValues="@array/repetition"/>
+
+</PreferenceScreen>

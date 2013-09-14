@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBA"
+    android:orientation="vertical"
+    android:padding="7dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dip" >
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_title"
+            android:inputType="textNoSuggestions" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_body"
+            android:inputType="textNoSuggestions" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <Button
+            style="@style/Buttons"
+            android:layout_weight="1"
+            android:background="#CBA"
+            android:text="@string/from" />
+
+        <Button
+            android:id="@+id/from_date_picker"
+            style="@style/Buttons"
+            android:layout_weight="2"
+            />
+
+        <Button
+            android:id="@+id/from_time_picker"
+            style="@style/Buttons"
+            android:layout_weight="1"
+            />
+
+        <!-- android:onClick="chooseTimeRec" -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <Button
+            style="@style/Buttons"
+            android:layout_weight="1"
+            android:background="#CBA"
+            android:text="@string/to" />
+
+        <Button
+            android:id="@+id/to_date_picker"
+            style="@style/Buttons"
+            android:layout_weight="2"
+             />
+
+        <Button
+            android:id="@+id/to_time_picker"
+            style="@style/Buttons"
+            android:layout_weight="1"
+             />
+
+        <!-- android:onClick="chooseTimeRec" -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/notify_before"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/notify_before"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rec_prompt"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Recurrence type spinner -->
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/rec_arrays"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <Button
+            style="@style/Buttons"
+            android:layout_weight="1"
+            android:background="#CBA"
+            android:text="@string/rec" />
+
+        <Button
+            android:id="@+id/rec_date_picker"
+            style="@style/Buttons"
+            android:layout_weight="2"
+           />
+
+        <Button
+            android:id="@+id/rec_time_picker"
+            style="@style/Buttons"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
